@@ -52,6 +52,9 @@ Desplegado en [Vercel](https://vercel.com/) como sitio estático, conectado dire
 
 ## Evidencias
 
+![Pagina web de la hoja de vida](image.png)
+![Vercel con la pagina desplegada](image-1.png)
+![GitHub con todos los cambios subidos y evidencias](image-2.png)
 
 
 ## Autor
