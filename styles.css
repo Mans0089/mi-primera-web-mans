@@ -20,57 +20,113 @@ body {
   overflow: hidden;
 }
 
-/* Tarjeta central */
-body > h1,
-body > h2,
-body > p {
+/* Tarjeta de hoja de vida */
+.cv-card {
   position: relative;
   z-index: 1;
-  max-width: 640px;
+  width: 100%;
+  max-width: 620px;
+  background: rgba(10, 22, 40, 0.72);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(94, 234, 212, 0.2);
+  border-radius: 18px;
+  padding: 2.5rem 2.25rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  text-align: left;
+}
+
+.cv-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #5eead4;
+  box-shadow: 0 0 25px rgba(94, 234, 212, 0.5);
+  margin-bottom: 1.1rem;
+}
+
+.role {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+.cv-section {
+  margin-bottom: 1.75rem;
+}
+
+.cv-section:last-of-type {
+  margin-bottom: 0;
 }
 
 h1 {
-  font-size: 2.4rem;
-  margin-bottom: 1rem;
+  font-size: 1.9rem;
+  margin-bottom: 0.4rem;
   color: #5eead4;
   letter-spacing: 0.5px;
   text-shadow: 0 0 18px rgba(94, 234, 212, 0.45);
-  transition: color 0.3s ease;
-}
-
-h1:hover {
-  color: #99f6e4;
 }
 
 h2 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-top: 1.5rem;
-  color: #99f6e4;
-  letter-spacing: 0.5px;
-  text-shadow: 0 0 14px rgba(94, 234, 212, 0.4);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #5eead4;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(94, 234, 212, 0.25);
 }
 
 p {
-  font-size: 1.1rem;
-  max-width: 600px;
+  font-size: 1rem;
   line-height: 1.7;
-  margin-bottom: 0.6rem;
   color: #cbd5e1;
-  background: rgba(15, 30, 48, 0.55);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(94, 234, 212, 0.15);
-  padding: 0.75rem 1.25rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 
-p:last-of-type {
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills span {
+  background: #0f2e2a;
+  border: 1px solid rgba(94, 234, 212, 0.4);
+  color: #99f6e4;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+}
+
+.github-link {
+  display: inline-block;
+  color: #0a1628;
+  background: #5eead4;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  box-shadow: 0 0 18px rgba(94, 234, 212, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.github-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 26px rgba(94, 234, 212, 0.6);
+}
+
+.footnote {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
   font-style: italic;
-  color: #94a3b8;
-  background: transparent;
-  border: none;
-  box-shadow: none;
+  color: #64748b;
 }
 
 /* ---------- Fondo: nube de circuitos + lluvia binaria ---------- */
