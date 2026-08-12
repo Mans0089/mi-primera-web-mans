@@ -2,6 +2,8 @@
 
 Página web estática y sencilla creada como práctica para la electiva de **Cloud Computing** (Noveno Semestre - Ingeniería de Sistemas). El objetivo del proyecto es construir una página personal básica con HTML y CSS, y desplegarla en la nube.
 
+🔗 **Demo en vivo:** [mi-primera-web-mans.vercel.app](https://mi-primera-web-mans.vercel.app/)
+
 ## Contenido
 
 - [`index.html`](index.html) — estructura de la página (título, presentación y descripción).
@@ -22,7 +24,7 @@ npx serve .
 
 ## Despliegue
 
-Este proyecto está pensado para desplegarse en un servicio de hosting estático en la nube (por ejemplo GitHub Pages, Netlify o Vercel).
+Desplegado en [Vercel](https://vercel.com/) como sitio estático, conectado directamente a este repositorio.
 
 ## Autor
 
