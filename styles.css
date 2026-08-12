@@ -22,6 +22,7 @@ body {
 
 /* Tarjeta central */
 body > h1,
+body > h2,
 body > p {
   position: relative;
   z-index: 1;
@@ -39,6 +40,15 @@ h1 {
 
 h1:hover {
   color: #99f6e4;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: #99f6e4;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 14px rgba(94, 234, 212, 0.4);
 }
 
 p {
