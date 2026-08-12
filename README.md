@@ -1,6 +1,6 @@
 # Hoja de vida web — Manuel Santiago Martinez Sierra
 
-Página web personal / carta de presentación creada como proyecto para la electiva de **Cloud Computing** (Noveno Semestre — Ingeniería de Sistemas). Construida con HTML y CSS puro, y desplegada en la nube con Vercel.
+Página web personal / hoja de vida creada como proyecto para la electiva de **Cloud Computing** (Ingeniería de Sistemas, Universidad Santo Tomás — Tunja). Construida con HTML y CSS puro, y desplegada en la nube con Vercel.
 
 🔗 **URL pública:** [mi-primera-web-mans.vercel.app](https://mi-primera-web-mans.vercel.app/)
 
@@ -8,21 +8,27 @@ Página web personal / carta de presentación creada como proyecto para la elect
 
 - **Nombre:** Manuel Santiago Martinez Sierra
 - **Carrera:** Ingeniería de Sistemas
-- **Semestre:** Noveno
-- **Perfil:** [github.com/Mans0089](https://github.com/Mans0089)
+- **Semestre:** VIII
+- **Universidad:** Universidad Santo Tomás, Tunja
+- **Ubicación:** Tunja, Colombia
+- **Correo:** manuel.martinez@usantoto.edu.co
+- **GitHub:** [github.com/Mans0089](https://github.com/Mans0089)
 
 ## Contenido de la página
 
-- Foto de perfil
-- Nombre completo
-- Carrera y semestre
-- Habilidades / tecnologías: Java, JavaScript, HTML, CSS, Git, GitHub, Python, Docker
-- Enlace a perfil de GitHub
+- Foto de perfil, nombre, rol académico y ubicación
+- Perfil profesional
+- Proyecto destacado: Interfaz Interactiva de Arquitectura de Seguridad Digital
+- Educación (bachillerato y pregrado en curso)
+- Habilidades técnicas por categoría (backend, frontend, lenguajes, bases de datos, DevOps/cloud, herramientas)
+- Habilidades blandas
+- Idiomas
+- Contacto: correo, teléfono y enlace a GitHub
 
 ## Estructura del repositorio
 
-- [`index.html`](index.html) — estructura de la página (foto, presentación, habilidades y enlace de contacto).
-- [`styles.css`](styles.css) — estilos: fondo animado con nube de circuitos, tarjeta central, badges de habilidades y tipografía.
+- [`index.html`](index.html) — estructura de la página (todas las secciones de la hoja de vida).
+- [`styles.css`](styles.css) — estilos: fondo animado con nube de circuitos, tarjeta de CV, badges y tipografía.
 - [`yo.png`](yo.png) — foto de perfil usada en la página.
 
 ## Tecnologías usadas en el proyecto
@@ -46,9 +52,7 @@ Desplegado en [Vercel](https://vercel.com/) como sitio estático, conectado dire
 
 ## Evidencias
 
-_Pendiente: agregar capturas de pantalla del sitio ya desplegado en Vercel._
 
-> Para agregarlas: guarda las imágenes en una carpeta `docs/` (ej. `docs/evidencia-1.png`) y enlázalas aquí con `![descripción](docs/evidencia-1.png)`.
 
 ## Autor
 

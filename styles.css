@@ -56,6 +56,12 @@ body {
   font-size: 1rem;
 }
 
+.location {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
 .cv-section {
   margin-bottom: 1.75rem;
 }
@@ -87,10 +93,142 @@ h2 {
   border-bottom: 1px solid rgba(94, 234, 212, 0.25);
 }
 
+h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
 p {
   font-size: 1rem;
   line-height: 1.7;
   color: #cbd5e1;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0.4rem;
+}
+
+.cv-section li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 0.3rem;
+}
+
+.cv-section li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #5eead4;
+}
+
+/* Proyecto destacado */
+.project {
+  background: rgba(94, 234, 212, 0.05);
+  border: 1px solid rgba(94, 234, 212, 0.15);
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+}
+
+.project-heading,
+.timeline-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem;
+  margin-bottom: 0.15rem;
+}
+
+.project-date {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  color: #5eead4;
+  white-space: nowrap;
+}
+
+.project-meta {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 0.6rem;
+}
+
+.project p {
+  margin-bottom: 0.6rem;
+}
+
+.project-stack {
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+  font-size: 0.88rem;
+  color: #94a3b8;
+}
+
+.project-stack strong {
+  color: #e2e8f0;
+}
+
+/* Educación */
+.timeline-item {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+/* Habilidades técnicas */
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem 1.5rem;
+}
+
+.skill-group h3 {
+  color: #99f6e4;
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 480px) {
+  .skill-groups {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contacto */
+.contact-list {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.contact-list li {
+  padding-left: 0;
+  text-align: center;
+}
+
+.contact-list li::before {
+  content: none;
+}
+
+.contact-list a {
+  color: #99f6e4;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
 }
 
 .skills {
