@@ -7,6 +7,50 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <div class="bg-scene" aria-hidden="true">
+    <svg class="cloud-glow" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="cloudFill" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#5eead4" stop-opacity="0.5"/>
+          <stop offset="100%" stop-color="#0f766e" stop-opacity="0.35"/>
+        </linearGradient>
+      </defs>
+      <path class="cloud-shape" fill="url(#cloudFill)" stroke="#5eead4" stroke-width="0.6"
+        d="M148 80c-3-22-22-38-45-38-19 0-35 11-42 27C43 71 28 84 28 101c0 19 16 34 36 34h84c19 0 35-15 35-33 0-15-13-27-35-22z"/>
+      <g class="circuit" stroke="#99f6e4" stroke-width="0.5" fill="none" opacity="0.8">
+        <path d="M45 95h12v-10h10v-8h14"/>
+        <path d="M55 105h20v-14h16v-12h12v-8"/>
+        <path d="M75 108h18v-20h14v-14h10v-8h16"/>
+        <path d="M100 110h14v-24h12v-16h14v-10"/>
+        <path d="M125 108h16v-18h12v-14"/>
+        <path d="M140 100h10v-12h-8v-10"/>
+        <circle cx="45" cy="95" r="1.4"/>
+        <circle cx="75" cy="108" r="1.4"/>
+        <circle cx="100" cy="110" r="1.4"/>
+        <circle cx="125" cy="108" r="1.4"/>
+        <circle cx="150" cy="88" r="1.4"/>
+        <circle cx="89" cy="70" r="1.4"/>
+        <circle cx="113" cy="60" r="1.4"/>
+      </g>
+    </svg>
+
+    <div class="rain">
+      <span style="--l:4%;  --d:9s;  --delay:-1s">01001101</span>
+      <span style="--l:12%; --d:11s; --delay:-4s">10110010</span>
+      <span style="--l:20%; --d:8s;  --delay:-2s">00110101</span>
+      <span style="--l:29%; --d:12s; --delay:-6s">11010010</span>
+      <span style="--l:38%; --d:10s; --delay:-3s">01011001</span>
+      <span style="--l:47%; --d:9s;  --delay:-7s">10001101</span>
+      <span style="--l:56%; --d:13s; --delay:-1s">00101110</span>
+      <span style="--l:65%; --d:10s; --delay:-5s">11100010</span>
+      <span style="--l:74%; --d:8s;  --delay:-8s">01110001</span>
+      <span style="--l:83%; --d:11s; --delay:-2s">10010110</span>
+      <span style="--l:91%; --d:9s;  --delay:-4s">00011011</span>
+      <span style="--l:97%; --d:12s; --delay:-6s">11001001</span>
+    </div>
+  </div>
+
   <h1>Hola, soy Manuel Martinez</h1>
   <p>Estudiante de Ingeniería de Sistemas · Electiva Cloud Computing.</p>
   <p>Esta página está desplegada en la nube.</p>
