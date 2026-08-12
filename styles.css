@@ -1,0 +1,55 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #f0fdfa);
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Tarjeta central */
+body > * {
+  max-width: 640px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: #0f766e;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: #14b8a6;
+}
+
+p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  line-height: 1.7;
+  margin-bottom: 0.6rem;
+  color: #475569;
+  background: #ffffff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.08);
+}
+
+p:last-of-type {
+  font-style: italic;
+  color: #64748b;
+  background: transparent;
+  box-shadow: none;
+}
