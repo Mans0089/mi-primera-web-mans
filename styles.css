@@ -15,9 +15,9 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 2rem;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Tarjeta de hoja de vida */
