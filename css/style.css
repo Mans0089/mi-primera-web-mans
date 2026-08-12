@@ -1,0 +1,323 @@
+/* ---------- Variables & reset ---------- */
+:root {
+  --bg-start: #e0f2fe;
+  --bg-end: #f0fdfa;
+  --text: #1e293b;
+  --text-soft: #475569;
+  --text-muted: #64748b;
+  --accent: #0f766e;
+  --accent-light: #14b8a6;
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --card-border: rgba(15, 118, 110, 0.12);
+  --shadow: rgba(15, 118, 110, 0.12);
+  --blob-a: #99f6e4;
+  --blob-b: #bae6fd;
+  --blob-c: #ccfbf1;
+}
+
+[data-theme="dark"] {
+  --bg-start: #0f172a;
+  --bg-end: #111827;
+  --text: #e2e8f0;
+  --text-soft: #cbd5e1;
+  --text-muted: #94a3b8;
+  --accent: #2dd4bf;
+  --accent-light: #5eead4;
+  --card-bg: rgba(30, 41, 59, 0.65);
+  --card-border: rgba(45, 212, 191, 0.18);
+  --shadow: rgba(0, 0, 0, 0.35);
+  --blob-a: #134e4a;
+  --blob-b: #1e3a5f;
+  --blob-c: #0f2f2c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* ---------- Animated background blobs ---------- */
+.bg-blobs {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.6;
+  animation: float 14s ease-in-out infinite;
+}
+
+.blob--one {
+  width: 320px;
+  height: 320px;
+  background: var(--blob-a);
+  top: -80px;
+  left: -60px;
+}
+
+.blob--two {
+  width: 260px;
+  height: 260px;
+  background: var(--blob-b);
+  bottom: -60px;
+  right: -40px;
+  animation-delay: -4s;
+}
+
+.blob--three {
+  width: 200px;
+  height: 200px;
+  background: var(--blob-c);
+  top: 40%;
+  left: 60%;
+  animation-delay: -8s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(20px, -30px) scale(1.08); }
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  backdrop-filter: blur(10px);
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.navbar__brand {
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.navbar__links a {
+  color: var(--text-soft);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.navbar__links a:hover {
+  color: var(--accent-light);
+}
+
+.theme-toggle {
+  border: 1px solid var(--card-border);
+  background: transparent;
+  color: var(--text);
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.08);
+  background: var(--card-border);
+}
+
+/* ---------- Layout ---------- */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.5rem 1rem;
+  gap: 1.5rem;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  max-width: 640px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.hero__avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent-light), var(--accent));
+  box-shadow: 0 8px 20px var(--shadow);
+  margin-bottom: 0.5rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: var(--accent-light);
+}
+
+.hero__lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-soft);
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, var(--accent-light), var(--accent));
+  color: #fff;
+  box-shadow: 0 6px 16px var(--shadow);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid var(--accent-light);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------- Cards ---------- */
+.card {
+  width: 100%;
+  max-width: 640px;
+  text-align: left;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 10px 30px var(--shadow);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card h2 {
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.card p {
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+.tech-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-list li {
+  background: var(--card-border);
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  .navbar__links {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+}
